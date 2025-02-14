@@ -1,5 +1,5 @@
-export default function Images({src, alt}){
+export default function Images({src, alt, className}){
     return (
-        <img src={src} alt={alt} />
+        <img className={className} src={src} alt={alt} />
     )
 }
