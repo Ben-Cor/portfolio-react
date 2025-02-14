@@ -7,7 +7,7 @@ import Intro from "./components/Intro";
 
 export default function App(){
   return(
-    <div>
+    <div className="bg-white">
       <Intro />
       <About />
       <Career />
