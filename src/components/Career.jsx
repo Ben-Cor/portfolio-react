@@ -1,6 +1,7 @@
 import Images from "./atoms/Images";
 import SectionTitle from "./atoms/SectionTitle";
 import TextBodyRight from "./atoms/TextBodyRight";
+import Button from "./atoms/Button";
 
 export default function Career() {
     return (
@@ -14,6 +15,7 @@ export default function Career() {
                 member of the RIBA. Recently, I have also obtained a NCFE Level 2 Certificate in 
                 Understanding Coding. A copy of my C.V. is available to download using the link below.`} />
             <Images src={src/images/careerGeo2.png} alt={'Geometric shapes with a graduation cap shown'} />
+            <Button text={'View my C.V.'} />
         </div>
     )
 }
