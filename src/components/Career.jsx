@@ -5,16 +5,18 @@ import Button from "./atoms/Button";
 
 export default function Career() {
     return (
-        <div>
-            <SectionTitle title={Career} />
-            <TextBodyRight text={`I have been working as an Architect and Senior Architect 
-                since 2015 where I have been responsible for managing both teams of architects and 
-                a range of projects of values up to £4 million. I have obtained a variety of qualifications 
-                which include GCSE's, A Levels, a bachelor's and a master's degree in Architecture, and a 
-                diploma in Architectural Professional Practice. In additon, I have been ARB chartered and a 
-                member of the RIBA. Recently, I have also obtained a NCFE Level 2 Certificate in 
-                Understanding Coding. A copy of my C.V. is available to download using the link below.`} />
-            <Images src={src/images/careerGeo2.png} alt={'Geometric shapes with a graduation cap shown'} />
+        <div className="flex flex-col items-end text-right text-slate-800 pr-[5%] py-[15vh] md:py-[20vh]">
+            <SectionTitle title={"Career"} />
+            <div className="flex flex-col-reverse items-center justify-start gap-[10%] md:flex-row md:w-[100%]">
+                <TextBodyRight text={`I have been working as an Architect and Senior Architect 
+                    since 2015 where I have been responsible for managing both teams of architects and 
+                    a range of projects of values up to £4 million. I have obtained a variety of qualifications 
+                    which include GCSE's, A Levels, a bachelor's and a master's degree in Architecture, and a 
+                    diploma in Architectural Professional Practice. In additon, I have been ARB chartered and a 
+                    member of the RIBA. Recently, I have also obtained a NCFE Level 2 Certificate in 
+                    Understanding Coding. A copy of my C.V. is available to download using the link below.`} />
+                <Images className={"w-[300px] mt-20 md:w-[30vw] md:mt-0"} src={"src/images/careerGeo2.png"} alt={'Geometric shapes with a graduation cap shown'} />
+            </div>
             <Button text={'View my C.V.'} />
         </div>
     )
