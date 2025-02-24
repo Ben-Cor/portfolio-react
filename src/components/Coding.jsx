@@ -15,9 +15,9 @@ export default function Coding() {
                                 I learnt about the development lifecycle as well as best practice and technical terminology.
                                 Below you can see some of the projects I have developed.`} />
                         </div>
-                        <div class="py-[5%] max-w-[90%]">
-                            <h6 class="md:text-4xl text-2xl my-[5%]">Coding Projects</h6>
-                        <div id="projectGrid" class="geoimageRight flex flex-wrap items-center justify-start gap-[5%] md:gap-20 my-2">
+                        <div className="py-[5%] max-w-[90%]">
+                            <h6 className="md:text-4xl text-2xl my-[5%]">Coding Projects</h6>
+                        <div id="projectGrid" className="flex flex-wrap items-center justify-start gap-[5%] md:gap-20 my-2">
                     
                 </div>
             </div>
