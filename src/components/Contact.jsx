@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Contact() {
     return (
-        <div className="flex flex-col items-center text-center pt-[22vh] pb-[15vh] w-[100%] md:pt-[27vh] ">
+        <div id="contact" className="flex flex-col items-center text-center pt-[22vh] pb-[15vh] w-[100%] md:pt-[27vh] ">
             <SectionTitle title={'Contact'} />
             <p className="mb-20 text:xl md:text-2xl">If you would like to get in touch, please either send me an email or use one of the socials links below</p>
             <div className="mb-[5%]">
@@ -17,7 +17,7 @@ export default function Contact() {
                 <a className="p-2 mx-4" target="_blank" href="https://github.com/Ben-Cor">
                     <FontAwesomeIcon className="p-2 mx-4 text-4xl" icon={faSquareGithub} />
                 </a>
-                <a class="p-2 mx-4" href="mailto:ben.james.cornell@gmail.com">
+                <a className="p-2 mx-4" href="mailto:ben.james.cornell@gmail.com">
                     <FontAwesomeIcon className="p-2 mx-4 text-4xl" icon={faEnvelope} />
                 </a>
             </div>

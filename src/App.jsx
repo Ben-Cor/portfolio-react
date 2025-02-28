@@ -4,12 +4,13 @@ import Coding from "./components/Coding";
 import Contact from "./components/Contact";
 import Hobbies from "./components/Hobbies";
 import Intro from "./components/Intro";
+import Dropdown from "./components/atoms/Dropdown";
 import ToTop from "./components/atoms/ToTop";
 
 export default function App(){
   return(
-    <html class="scroll-smooth">
-      <div className="bg-white">
+      <div className="bg-white scroll-smooth">
+        <Dropdown />
         <Intro />
         <About />
         <Career />
@@ -20,6 +21,5 @@ export default function App(){
           <ToTop />
         </footer>
       </div>
-    </html>
   )
 }

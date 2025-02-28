@@ -4,7 +4,7 @@ import SectionTitle from "./atoms/SectionTitle";
 
 export default function About() {
     return (
-        <div className="flex flex-col items-start text-left pb-[22vh] pt-[17vh] pl-[5%] md:pb-[27vh] md:pt-[17vh]">
+        <div id="about" className="flex flex-col items-start text-left pb-[22vh] pt-[17vh] pl-[5%] md:pb-[27vh] md:pt-[17vh]">
             <SectionTitle title={"About"} />
             <div className="flex flex-col items-start justify-start gap-[10%] w-[95%] md:items-center md:flex-row md:justify-start">
                 <TextBodyLeft text={`I'm an architect & an aspiring Software Engineer.

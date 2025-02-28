@@ -5,7 +5,7 @@ import Button from "./atoms/Button";
 
 export default function Career() {
     return (
-        <div className="flex flex-col items-end text-right text-slate-800 max-w-[95%] pr-[3%] py-[15vh] md:py-[20vh]">
+        <div id="career" className="flex flex-col items-end text-right text-slate-800 max-w-[95%] pr-[3%] py-[15vh] md:py-[20vh]">
             <SectionTitle title={"Career"} />
             <div className="flex flex-col-reverse items-center justify-start gap-[10%] md:flex-row md:w-[90%]">
                 <Images className={"w-[300px] mt-20 md:w-[30vw] md:mt-0"} src={"src/images/careerGeo2.png"} alt={'Geometric shapes with a graduation cap shown'} />
