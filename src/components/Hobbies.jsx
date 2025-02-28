@@ -4,7 +4,7 @@ import TextBodyRight from "./atoms/TextBodyRight";
 
 export default function Hobbies() {
     return (
-        <div className="flex flex-col items-end text-right text-slate-800 max-w-[95%] pr-[3%] py-[15vh] md:py-[20vh]">
+        <div id="hobbies" className="flex flex-col items-end text-right text-slate-800 max-w-[95%] pr-[3%] py-[15vh] md:py-[20vh]">
                     <SectionTitle title={"Hobbies"} />
                     <div className="flex flex-col-reverse items-center justify-start gap-[10%] md:flex-row md:w-[90%]">
                         <Images className={"w-[300px] mt-20 md:w-[30vw] md:mt-0"} src={"src/images/hobbyGeo2.png"} alt={'Geometric shapes with a playstation controller shown'} />
