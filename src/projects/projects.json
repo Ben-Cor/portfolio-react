@@ -1,6 +1,7 @@
 {
     "projects": [
         {
+            "key": 1,
             "title": "Space invaders game",
             "description": "A JavaScript version of this classic game",
             "image": "project_1.jpg",
@@ -8,6 +9,7 @@
             "link": "https://github.com/wowie"
         },
         {
+            "key": 2,
             "title": "A to-do list app",
             "description": "An app built with React that allows users to track tasks with reminders, tags, and classes that can be assigned.",
             "image": "project_2.jpg",
@@ -15,6 +17,7 @@
             "link": "https://github.com/zowie"
         },
         {
+            "key": 3,
             "title": "My third project",
             "description": "it's also good",
             "image": "project_3.jpg",
