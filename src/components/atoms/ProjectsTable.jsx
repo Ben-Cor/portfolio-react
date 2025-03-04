@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import {faSquareGithub} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function ProjectsTable (){
 
@@ -33,6 +35,10 @@ export default function ProjectsTable (){
                   <h4 className="text-2xl pb-4">{project.title}</h4>
                   <br/>
                   <p className="px-3">{project.description}</p>
+                  <br/>
+                  <a className="p-2 mx-4" target="_blank" href={project.link}>
+                    <FontAwesomeIcon className="p-2 mx-4 text-4xl" icon={faSquareGithub} />
+                  </a>
                 </div>
               </div>
             );
