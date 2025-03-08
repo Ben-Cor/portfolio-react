@@ -17,7 +17,7 @@ export default function Coding() {
                         Below you can see some of the projects I have developed.`} />
                 </div>
                 <div className="py-[5%] max-w-[90%]">
-                    <h6 className="md:text-4xl text-2xl my-[5%]">Coding Projects</h6>
+                    <h6 className="md:text-4xl text-2xl font-primary my-[5%]">Coding Projects</h6>
                     <div id="projectGrid" className="flex flex-wrap items-center justify-start gap-[5%] md:gap-20 my-2">
                         <ProjectsTable />
                     </div>
