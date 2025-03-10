@@ -21,7 +21,7 @@ export default function Contact() {
                     <FontAwesomeIcon className="p-2 mx-4 text-4xl" icon={faEnvelope} />
                 </a>
             </div>
-            <Images className={"w-[200px] mt-20 md:w-[30vw] md:mt-0"} src={"src/images/Geo1.png"} alt={'Geometric shapes with a graduation cap shown'} />
+            <Images className={"w-[200px] mt-20 md:w-[20vw] md:mt-0 md:mb-[20vh]"} src={"src/images/Geo1.png"} alt={'Geometric shapes with a graduation cap shown'} />
         </div>
     )
 }

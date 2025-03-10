@@ -2,6 +2,6 @@
 
 
 @theme {
-    --font-primary: "Chakra Petch", "sans-serif"; 
-    --font-secondary: "DM Mono", "monospace";
+    --font-primary: "DM Mono", "monospace" ; 
+    --font-secondary: "Chakra Petch", "sans-serif";
   }
