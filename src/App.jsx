@@ -9,7 +9,7 @@ import ToTop from "./components/atoms/ToTop";
 
 export default function App(){
   return(
-      <div className="bg-white scroll-smooth">
+      <div className="bg-amber-50 scroll-smooth">
         <Dropdown />
         <Intro />
         <About />
