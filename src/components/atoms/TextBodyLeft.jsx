@@ -1,7 +1,7 @@
 export default function TextBodyLeft({text}) {
     return (
         <div>
-            <p className="mt-8 mb-20 text-base md:text-lg">{text}</p>
+            <p className="text-base font-secondary mt-8 mb-3 pr-[10%] md:text-lg md:pt-[5%]">{text}</p>
         </div>
     )
 }
