@@ -30,7 +30,7 @@ export default function ProjectsTable (){
                 <div
                   className="flex flex-col items-center justify-center w-full h-full absolute top-0 left-0 pt-8
                             text-center transition-opacity duration-500 opacity-0 hover:opacity-100 
-                            bg-amber-50 bg-opacity-90"
+                            bg-white bg-opacity-90"
                 >
                   <h4 className="text-2xl pb-4">{project.title}</h4>
                   <br/>
