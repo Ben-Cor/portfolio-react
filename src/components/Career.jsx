@@ -19,7 +19,7 @@ export default function Career() {
                     valuable lessons, including collaboration, communication, project management, problem solving, time management, 
                     and organisation. A copy of my C.V. is available to download using the link below.`} />
             </div>
-                <a  className="text-2xl p-2 px-4 mt-5 hidden border-slate-800 border-2 rounded-3xl bg-slate-800 text-amber-50 md:block" href="src/images/BenCV.pdf" download="Ben Cornell - CV"> 
+                <a  className="text-2xl p-2 px-4 mt-5 hidden border-slate-800 border-2 rounded-3xl bg-slate-800 text-amber-50 hover:text-blue-300 md:block" href="src/images/BenCV.pdf" download="Ben Cornell - CV"> 
                     <Button text={'View my C.V.'} />
                 </a>
         </div>
