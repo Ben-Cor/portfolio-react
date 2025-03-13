@@ -16,7 +16,7 @@ export default function Career() {
                     since 2015. I have always loved problem solving and being able to find creative solutions 
                     to issues, and coding lets me achieve this without 
                     the constainsts of architecture. My architectural experience has taught me range of 
-                    valuable lessons, including team working, project management, problem solving, time management, 
+                    valuable lessons, including collaboration, communication, project management, problem solving, time management, 
                     and organisation. A copy of my C.V. is available to download using the link below.`} />
             </div>
                 <a  className="text-2xl p-2 px-4 mt-5 hidden border-slate-800 border-2 rounded-3xl bg-slate-800 text-amber-50 md:block" href="src/images/BenCV.pdf" download="Ben Cornell - CV"> 
