@@ -9,9 +9,9 @@ export default function About() {
             <div className="flex flex-col items-start justify-start gap-[10%] w-[95%] md:items-start md:flex-row md:justify-start">
                 <TextBodyLeft text={`I'm an aspiring Software Engineer working with a range of languages and frameworks 
                         including React, MySQL, Laravel, and PHP.
-                        I have always had an interest in coding since editing a MySpace page when I was young, and recently I have had the 
-                        opportunity to greatly expand on these skills through a software development bootcamp.`} />
-                <Images className={"w-[300px] mt-5 border-slate-900 border-2 shadow-2xl md:w-[30vw] md:pr-0"} src={"src/images/typingGIF.gif"} alt={"A gif showing Jim Carey typing manically"} />
+                        I have always had an interest in coding since editing a MySpace page when I was young. I have continued to dabble in coding since then and recently I have had the 
+                        opportunity to greatly expand on these skills through a software development bootcamp with iO Academy.`} />
+                <Images className={"w-[300px] mt-5 border-slate-900 border-2 shadow-2xl md:w-[60vw] md:pr-0 md:mr-20"} src={"src/images/thumbsUpGIF.gif"} alt={"A gif showing Jim Carey typing manically"} />
             </div>
         </div>
     )
