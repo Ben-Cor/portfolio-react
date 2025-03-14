@@ -10,7 +10,7 @@ import { useRef } from "react";
 export default function Contact() {
 
     const contactRef = useRef(null);
-    const isVisible = useIntersectionObserver(contactRef, {threshold: 0.4 });
+    const isVisible = useIntersectionObserver(contactRef, {threshold: 0.6 });
 
     var showClass = isVisible ? "translate-y-0 transition duration-500 ease-in-out delay-300 md:delay-0" : "translate-y-[100px] transition duration-400 ease-in-out";
 
