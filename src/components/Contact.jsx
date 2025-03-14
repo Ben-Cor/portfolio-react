@@ -12,7 +12,7 @@ export default function Contact() {
     const contactRef = useRef(null);
     const isVisible = useIntersectionObserver(contactRef, {threshold: 0.4 });
 
-    var showClass = isVisible ? "translate-y-0 transition duration-500 ease-in-out" : "translate-y-[100px] transition duration-400 ease-in-out";
+    var showClass = isVisible ? "translate-y-0 transition duration-500 ease-in-out delay-300 md:delay-0" : "translate-y-[100px] transition duration-400 ease-in-out";
 
     return (
         <div ref={contactRef} className="flex flex-col items-center text-center pt-[22vh] pb-[5vh] w-[100%] md:pt-[27vh] ">

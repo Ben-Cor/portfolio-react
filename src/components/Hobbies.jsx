@@ -9,7 +9,7 @@ export default function Hobbies() {
     const hobbiesRef = useRef(null);
     const isVisible = useIntersectionObserver(hobbiesRef, {threshold: 0.4 });
 
-    var showClass = isVisible ? "opacity-100 transition duration-900 ease-in-out" : "opacity-0 transition duration-400 ease-in-out";
+    var showClass = isVisible ? "opacity-100 transition duration-900 ease-in-out delay-300 md:delay-0" : "opacity-0 transition duration-400 ease-in-out";
 
     return (
         <div id="hobbies" ref={hobbiesRef} className="flex flex-col items-end text-right text-slate-800 max-w-[95%] pr-[3%] py-[15vh] lg:py-[20vh]">
