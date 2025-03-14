@@ -2,24 +2,24 @@
     "projects": [
         {
             "key": 1,
-            "title": "Space invaders game",
-            "description": "A JavaScript version of this classic game",
+            "title": "Bookswap React App",
+            "description": "A React front end project website allowing users to view, borrow, and review books using an api.",
             "image": "project_1.jpg",
-            "alt": "Screenshot of a space invaders style game",
-            "link": "https://github.com/wowie"
+            "alt": "Screenshot of a bookswap app",
+            "link": "https://github.com/iO-Academy/2025-jan-okapis-bookswap-fe"
         },
         {
             "key": 2,
-            "title": "A to-do list app",
-            "description": "An app built with React that allows users to track tasks with reminders, tags, and classes that can be assigned.",
+            "title": "Blog Post App",
+            "description": "Using template HTML, I created a database and the back end code to form a blog post website which included user registration, adding posts, and liking and disliking posts",
             "image": "project_2.jpg",
-            "alt": "To-do list app screenshot",
-            "link": "https://github.com/zowie"
+            "alt": "Blog app screenshot",
+            "link": "https://github.com/iO-Academy/2025-jan-sde-blog-sql-seagulls"
         },
         {
             "key": 3,
-            "title": "My third project",
-            "description": "it's also good",
+            "title": "Laravel project",
+            "description": "This was a team project at the end of the iOAcademy Course",
             "image": "project_3.jpg",
             "alt": "some alt text",
             "link": "https://github.com/kapowie"
