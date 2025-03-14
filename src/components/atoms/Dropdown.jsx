@@ -12,7 +12,7 @@ function handleDropdown (){
 }
 
     return (
-        <div id="dropdown" className="hidden md:block pt-6 pl-4" onTouchStart={handleDropdown} onClick={handleDropdown}>
+        <div id="dropdown" className="md:block pt-6 pl-4" onTouch={handleDropdown} onClick={handleDropdown}>
                 <button className="fixed right-4 top-6 w-[50px] h-[50px] text-white hover:text-blue-300 bg-slate-800 p-3 rounded-3xl">
                     <FontAwesomeIcon icon={faBars} />
                 </button>
