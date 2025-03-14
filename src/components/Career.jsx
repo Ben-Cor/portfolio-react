@@ -8,7 +8,7 @@ import { useRef } from "react";
 export default function Career() {
 
     const careerRef = useRef(null);
-    const isVisible = useIntersectionObserver(careerRef, {threshold: 0.3 });
+    const isVisible = useIntersectionObserver(careerRef, {threshold: 0.4 });
 
     var showClass = isVisible ? "opacity-100 transition duration-900 ease-in-out" : "opacity-0 transition duration-400 ease-in-out";
 

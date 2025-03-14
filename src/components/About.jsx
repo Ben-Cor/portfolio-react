@@ -7,7 +7,7 @@ import { useRef } from "react";
 export default function About() {
 
     const aboutRef = useRef(null);
-    const isVisible = useIntersectionObserver(aboutRef, {threshold: 0.3 });
+    const isVisible = useIntersectionObserver(aboutRef, {threshold: 0.5 });
 
     var showClass = isVisible ? "opacity-100 transition duration-900 ease-in-out" : "opacity-0 transition duration-400 ease-in-out";
 
