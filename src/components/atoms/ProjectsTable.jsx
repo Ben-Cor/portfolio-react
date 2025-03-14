@@ -29,7 +29,7 @@ export default function ProjectsTable (){
                 />
                 <div
                   className="flex flex-col items-center justify-center w-full h-full absolute top-0 left-0 pt-8
-                            text-center transition-opacity duration-500 opacity-0 hover:opacity-100
+                            text-center transition-opacity duration-500 opacity-0 hover:opacity-100 focus-within:opacity-100
                             bg-white bg-opacity-90 border-[1px] border-slate-900"
                 >
                   <h4 className="text-2xl pb-4">{project.title}</h4>
@@ -37,7 +37,7 @@ export default function ProjectsTable (){
                   <p className="px-3">{project.description}</p>
                   <br/>
                   <a className="p-2 mx-4" target="_blank" href={project.link}>
-                    <FontAwesomeIcon className="p-2 mx-4 text-4xl hover:text-blue-300" icon={faSquareGithub} />
+                    <FontAwesomeIcon className="p-2 mx-4 text-4xl focus-within:text-blue-300 md: hover:text-blue-300 md:focus-within:text-white" icon={faSquareGithub} />
                   </a>
                 </div>
               </div>
