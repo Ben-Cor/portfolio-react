@@ -5,7 +5,6 @@ import Contact from "./components/Contact";
 import Hobbies from "./components/Hobbies";
 import Intro from "./components/Intro";
 import Dropdown from "./components/atoms/Dropdown";
-import MobileNav from "./components/atoms/MobileNav";
 import ToTop from "./components/atoms/ToTop";
 
 export default function App(){
