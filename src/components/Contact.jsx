@@ -6,6 +6,7 @@ import {faSquareGithub} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from "react";
+import simpsonsGIF from "../images/simpsonsGIF.gif";
 
 export default function Contact() {
 

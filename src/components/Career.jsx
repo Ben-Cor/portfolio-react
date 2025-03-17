@@ -4,6 +4,7 @@ import TextBodyRight from "./atoms/TextBodyRight";
 import useIntersectionObserver from "../hooks/intersectionObserver";
 import Button from "./atoms/Button";
 import { useRef } from "react";
+import southParkGIF from "../images/southParkGIF.gif";
 
 export default function Career() {
 

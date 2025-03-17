@@ -3,6 +3,7 @@ import TextBodyLeft from "./atoms/TextBodyLeft";
 import SectionTitle from "./atoms/SectionTitle";
 import useIntersectionObserver from "../hooks/intersectionObserver";
 import { useRef } from "react";
+import thumbsUpGIF from "../images/thumbsUpGIF.gif";
 
 export default function About() {
 
