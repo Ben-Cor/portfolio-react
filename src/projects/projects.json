@@ -6,15 +6,17 @@
             "description": "A React front end project website allowing users to view, borrow, and review books using an api.",
             "image": "project_1.jpg",
             "alt": "Screenshot of a bookswap app",
-            "link": "https://github.com/iO-Academy/2025-jan-okapis-bookswap-fe"
+            "link": "https://github.com/iO-Academy/2025-jan-okapis-bookswap-fe",
+            "projectLink": "https://2025-okapis-bookswap.dev.io-academy.uk/"
         },
         {
             "key": 2,
             "title": "Blog Post App",
-            "description": "Using template HTML, I created a database and the back end code to form a blog post website which included user registration, adding posts, and liking and disliking posts",
+            "description": "I created a database and the back end code to form a blog post website which included user registration, adding posts, and liking/disliking posts",
             "image": "project_2.jpg",
             "alt": "Blog app screenshot",
-            "link": "https://github.com/iO-Academy/2025-jan-sde-blog-sql-seagulls"
+            "link": "https://github.com/iO-Academy/2025-jan-sde-blog-sql-seagulls",
+            "projectLink": "https://2025-sql-seagulls-blog.dev.io-academy.uk/"
         },
         {
             "key": 3,
@@ -22,7 +24,8 @@
             "description": "This was a team project at the end of the iOAcademy Course",
             "image": "project_3.jpg",
             "alt": "some alt text",
-            "link": "https://github.com/kapowie"
+            "link": "https://github.com/kapowie",
+            "projectLink": "https://2025-sql-seagulls-blog.dev.io-academy.uk/"
         }
     ]
 }
