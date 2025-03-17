@@ -5,6 +5,7 @@ import useIntersectionObserver from "../hooks/intersectionObserver";
 import Button from "./atoms/Button";
 import { useRef } from "react";
 import southParkGIF from "../images/southParkGIF.gif";
+import BenCV from "../images/BenCV.pdf";
 
 export default function Career() {
 

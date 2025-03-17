@@ -1,6 +1,7 @@
 import DecryptedText from "./atoms/DecryptedText";
 import Images from "./atoms/Images";
 import MainTitle from "./atoms/MainTitle";
+import avatar from "../images/avatar.png";
 
 export default function Intro() {
     return (
