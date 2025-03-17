@@ -18,7 +18,7 @@ export default function ProjectsTable() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8">
       {/* Project List */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 h-auto">
         {projectsInfo.map((project) => (
           <div
             key={project.key}
@@ -32,7 +32,7 @@ export default function ProjectsTable() {
         ))}
       </div>
 
-      <div className="sticky lg:top-4 bottom-0 lg:h-[500px] lg:w-[500px] bg-white lg:bg-transparent z-10">
+      <div className="sticky lg:top-4 bottom-0 lg:h-auto lg:w-[500px] bg-white lg:bg-transparent z-10">
         {hoveredProject && (
           <div className="flex flex-col items-center justify-center gap-4 p-4 lg:p-0">
             <img
