@@ -6,7 +6,7 @@ import avatar from "../images/avatar.png";
 export default function Intro() {
     return (
         <div className="flex flex-col justify-center items-center text-center gap-4 px-10 h-screen">
-            <Images className="w-[450px]" src={"src/images/avatar.png"} alt={"Animated style image of Ben Cornell"} />
+            <Images className="w-[450px]" src={avatar} alt={"Animated style image of Ben Cornell"} />
             <MainTitle title='I am Ben Cornell' />
             <DecryptedText 
                 text="I code things" 
