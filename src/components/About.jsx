@@ -15,7 +15,7 @@ export default function About() {
     return (
         <div id="about" ref={aboutRef} className="flex flex-col items-start text-left pb-[22vh] pt-[17vh] pl-[5%] md:pb-[27vh] md:pt-[17vh]">
             <SectionTitle className="" title={"About"} />
-            <div className="flex flex-col items-start justify-start gap-[10vw] w-[95%] md:items-start md:flex-row md:justify-start">
+            <div className="flex flex-col items-start justify-start gap-[10vw] w-[95%] md:items-center md:flex-row md:justify-center">
                 <TextBodyLeft text={`I'm an aspiring Software Engineer working with a range of languages and frameworks 
                         including React, MySQL, Laravel, and PHP.
                         I have always had an interest in coding since editing a MySpace page when I was young. I have continued to dabble in coding since then and recently I have had the 

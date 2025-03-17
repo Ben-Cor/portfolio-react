@@ -8,7 +8,7 @@ import conesGIF from "../images/conesGIF.gif";
 export default function Hobbies() {
 
     const hobbiesRef = useRef(null);
-    const isVisible = useIntersectionObserver(hobbiesRef, {threshold: 0.5 });
+    const isVisible = useIntersectionObserver(hobbiesRef, {threshold: 0.4 });
 
     var showClass = isVisible ? "opacity-100 transition duration-900 ease-in-out delay-300 md:delay-0" : "opacity-0 transition duration-400 ease-in-out";
 
