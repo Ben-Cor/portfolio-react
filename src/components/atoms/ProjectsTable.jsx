@@ -22,7 +22,7 @@ export default function ProjectsTable() {
         {projectsInfo.map((project) => (
           <div
             key={project.key}
-            className="border-[1px] font-primary border-slate-900 p-3 cursor-pointer hover:text-white focus-within:text-white hover:bg-slate-900"
+            className="border-[1px] font-primary border-slate-900 p-3 cursor-pointer hover:text-white focus-within:text-white hover:bg-slate-900 active:bg-slate-900 active:text-white transition-colors duration-200"
             onMouseEnter={() => setHoveredProject(project)}
             onTouchStart={() => setHoveredProject(project)}
           >
