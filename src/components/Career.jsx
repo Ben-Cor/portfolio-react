@@ -18,7 +18,7 @@ export default function Career() {
         <div id="career" ref={careerRef} className="flex flex-col items-end text-right text-slate-800 max-w-[95%] pr-[3%] py-[15vh] md:py-[20vh]">
             <SectionTitle title={"Career"} />
             <div className="flex flex-col-reverse items-end justify-start gap-[10%] md:flex-row md:w-[90%] md:items-center">
-                <Images className={`${showClass} w-[300px] mt-10 border-slate-900 border-2 shadow-2xl md:w-[30vw] md:mt-0`} src={"src/images/southParkGIF.gif"} alt={'A gif of stan from south park claiming to have solved problems'} />
+                <Images className={`${showClass} w-[300px] mt-10 border-slate-900 border-2 shadow-2xl md:w-[30vw] md:mt-0`} src={southParkGIF} alt={'A gif of stan from south park claiming to have solved problems'} />
                 <a  className="text-2xl p-2 px-4 mt-5 border-slate-800 border-2 rounded-3xl bg-slate-800 text-amber-50 md:hidden" href="src/images/BenCV.pdf" download="Ben Cornell - CV"> 
                     <Button text={'View my C.V.'} />
                 </a>
