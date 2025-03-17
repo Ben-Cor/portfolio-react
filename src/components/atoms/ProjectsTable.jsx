@@ -14,8 +14,10 @@ export default function ProjectsTable() {
 
   useEffect(getProjects, []);
 
+ 
   return (
-    <div className="grid grid-cols-[1fr_auto] gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8">
+      {/* Project List */}
       <div className="flex flex-col gap-4">
         {projectsInfo.map((project) => (
           <div
@@ -30,13 +32,13 @@ export default function ProjectsTable() {
         ))}
       </div>
 
-      <div className="sticky top-4 h-[500px] w-[500px]">
+      <div className="sticky lg:top-4 bottom-0 lg:h-[500px] lg:w-[500px] bg-white lg:bg-transparent z-10">
         {hoveredProject && (
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col items-center justify-center gap-4 p-4 lg:p-0">
             <img
               src={`src/projects/${hoveredProject.image}`}
               alt={hoveredProject.alt}
-              className="w-[400px] h-auto object-contain  border-slate-900 border-2 shadow-2xl"
+              className="w-[300px] lg:w-[400px] h-auto object-contain border-slate-900 border-2 shadow-2xl"
             />
             <div className="flex items-center justify-center gap-4">
               <a
@@ -59,4 +61,4 @@ export default function ProjectsTable() {
       </div>
     </div>
   );
-}    
+}
