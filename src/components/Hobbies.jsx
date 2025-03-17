@@ -3,6 +3,7 @@ import SectionTitle from "./atoms/SectionTitle";
 import TextBodyRight from "./atoms/TextBodyRight";
 import useIntersectionObserver from "../hooks/intersectionObserver";
 import { useRef } from "react";
+import conesGIF from "../images/conesGIF.gif";
 
 export default function Hobbies() {
 
