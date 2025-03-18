@@ -13,6 +13,7 @@ export default function DecryptedText({
   parentClassName = '',
   encryptedClassName = '',
   animateOn = 'hover',
+  delay = 0,
   ...props
 }) {
   const [displayText, setDisplayText] = useState(text)
@@ -24,6 +25,7 @@ export default function DecryptedText({
 
   useEffect(() => {
     let interval
+    let timeout
     let currentIteration = 0
 
     const getNextIndex = (revealedSet) => {
@@ -97,33 +99,35 @@ export default function DecryptedText({
     }
 
     if (isHovering) {
-      setIsScrambling(true)
-      interval = setInterval(() => {
-        setRevealedIndices((prevRevealed) => {
-          if (sequential) {
-            if (prevRevealed.size < text.length) {
-              const nextIndex = getNextIndex(prevRevealed)
-              const newRevealed = new Set(prevRevealed)
-              newRevealed.add(nextIndex)
-              setDisplayText(shuffleText(text, newRevealed))
-              return newRevealed
+      timeout = setTimeout(() => {
+        setIsScrambling(true)
+        interval = setInterval(() => {
+          setRevealedIndices((prevRevealed) => {
+            if (sequential) {
+              if (prevRevealed.size < text.length) {
+                const nextIndex = getNextIndex(prevRevealed)
+                const newRevealed = new Set(prevRevealed)
+                newRevealed.add(nextIndex)
+                setDisplayText(shuffleText(text, newRevealed))
+                return newRevealed
+              } else {
+                clearInterval(interval)
+                setIsScrambling(false)
+                return prevRevealed
+              }
             } else {
-              clearInterval(interval)
-              setIsScrambling(false)
+              setDisplayText(shuffleText(text, prevRevealed))
+              currentIteration++
+              if (currentIteration >= maxIterations) {
+                clearInterval(interval)
+                setIsScrambling(false)
+                setDisplayText(text)
+              }
               return prevRevealed
             }
-          } else {
-            setDisplayText(shuffleText(text, prevRevealed))
-            currentIteration++
-            if (currentIteration >= maxIterations) {
-              clearInterval(interval)
-              setIsScrambling(false)
-              setDisplayText(text)
-            }
-            return prevRevealed
-          }
-        })
-      }, speed)
+          })
+        }, speed)
+      }, delay)
     } else {
       setDisplayText(text)
       setRevealedIndices(new Set())
@@ -132,6 +136,7 @@ export default function DecryptedText({
 
     return () => {
       if (interval) clearInterval(interval)
+      if (timeout) clearTimeout(timeout)
     }
   }, [
     isHovering,
@@ -142,6 +147,7 @@ export default function DecryptedText({
     revealDirection,
     characters,
     useOriginalCharsOnly,
+    delay,
   ])
 
   useEffect(() => {
