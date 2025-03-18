@@ -19,7 +19,7 @@ export default function Career() {
             <SectionTitle title={"Career"} />
             <div className="flex flex-col-reverse items-end justify-start gap-[10%] md:flex-row md:w-[90%] md:items-center">
                 <Images className={`${showClass} w-[300px] mt-10 border-slate-900 border-2 shadow-2xl md:w-[30vw] md:mt-0`} src={southParkGIF} alt={'A gif of stan from south park claiming to have solved problems'} />
-                <a  className="text-2xl p-2 px-4 mt-5 border-slate-800 border-2 rounded-3xl bg-slate-800 text-amber-50 md:hidden" href="src/images/BenCV.pdf" download="Ben Cornell - CV"> 
+                <a  className="text-2xl p-2 px-4 mt-5 border-slate-800 border-2 rounded-3xl bg-slate-800 text-amber-50 md:hidden" href="src/images/BenCV.pdf" download="BenCV.pdf"> 
                     <Button text={'View my C.V.'} />
                 </a>
                 <TextBodyRight text={`I have been working as an Architect and Senior Architect 
@@ -29,7 +29,7 @@ export default function Career() {
                     valuable lessons including collaboration, communication, project management, problem solving, time management, 
                     and organisation. A copy of my C.V. is available to download using the link below.`} />
             </div>
-                <a  className="text-2xl p-2 px-4 mt-5 hidden border-slate-800 border-2 rounded-3xl bg-slate-800 text-amber-50 hover:text-blue-300 md:block" href={BenCV} download="Ben Cornell - CV"> 
+                <a  className="text-2xl p-2 px-4 mt-5 hidden border-slate-800 border-2 rounded-3xl bg-slate-800 text-amber-50 hover:text-blue-300 md:block" href={BenCV} download="BenCV.pdf"> 
                     <Button text={'View my C.V.'} />
                 </a>
         </div>
