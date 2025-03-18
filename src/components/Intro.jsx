@@ -7,8 +7,8 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function Intro() {
     return (
-        <div className="flex flex-col justify-center items-center text-center px-10 h-screen gap-8 md:gap-4">
-            <Images className="w-[20vw] min-w-[200px] max-w-[400px] mb-4" src={avatar} alt={"Animated style image of Ben Cornell"} />
+        <div className="flex flex-col justify-center items-center text-center px-10 h-screen gap-8 md:gap-3">
+            <Images className="w-[20vw] min-w-[200px] max-w-[375px] mb-4" src={avatar} alt={"Animated style image of Ben Cornell"} />
             <div>
                 <MainTitle title='Hi! I am Ben Cornell.' />
                 <DecryptedText 
@@ -17,9 +17,9 @@ export default function Intro() {
                     maxIterations={20} 
                     characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+" 
                     sequential="true"
-                    className="revealed text-[2rem] font-primary text-slate-900 lg:text-[4.5rem]" 
+                    className="revealed text-[2rem] font-primary text-slate-900 lg:text-[4.2rem]" 
                     parentClassName="all-letters"
-                    encryptedClassName="encrypted text-[2rem] font-primary text-slate-900 lg:text-[4.5rem]"
+                    encryptedClassName="encrypted text-[2rem] font-primary text-slate-900 lg:text-[4.2rem]"
                     animateOn="view"
                     revealDirection="start"
                     delay={300}
