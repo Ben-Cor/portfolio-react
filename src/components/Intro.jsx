@@ -19,6 +19,7 @@ export default function Intro() {
                 encryptedClassName="encrypted text-[1.5rem] font-primary md:text-[2rem]"
                 animateOn="view"
                 revealDirection="start"
+                delay={300}
             />
               <DecryptedText 
                 text="React | PHP | MySQL" 
@@ -31,6 +32,7 @@ export default function Intro() {
                 encryptedClassName="encrypted text-[1.2rem] font-primary md:text-[1.75rem]"
                 animateOn="view"
                 revealDirection="start"
+                delay={300}
             />
         </div>
     )

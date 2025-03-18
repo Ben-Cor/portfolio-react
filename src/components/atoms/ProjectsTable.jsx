@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function ProjectsTable() {
   const [projectsInfo, setProjectsInfo] = useState([]);
   const [hoveredProject, setHoveredProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   function getProjects() {
     fetch("src/projects/projects.json")
@@ -14,17 +15,21 @@ export default function ProjectsTable() {
 
   useEffect(getProjects, []);
 
- 
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+    setHoveredProject(project);
+  };
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8">
-      {/* Project List */}
       <div className="flex flex-col gap-4 h-auto">
         {projectsInfo.map((project) => (
           <div
             key={project.key}
-            className="border-[1px] font-primary border-slate-900 p-3 cursor-pointer hover:text-white focus-within:text-white hover:bg-slate-900 active:bg-slate-900 active:text-white transition-colors duration-200"
+            className={`border-[1px] font-primary border-slate-900 p-3 cursor-pointer hover:text-white focus-within:text-white hover:bg-slate-900 active:bg-slate-900 active:text-white transition-colors duration-200 ${selectedProject === project ? 'bg-slate-900 text-white' : ''}`}
             onMouseEnter={() => setHoveredProject(project)}
-            onTouchStart={() => setHoveredProject(project)}
+            onTouchStart={() => handleProjectClick(project)}
+            onClick={() => handleProjectClick(project)}
           >
             <h4 className="text-2xl">{project.title}</h4>
             <p>{project.description}</p>
