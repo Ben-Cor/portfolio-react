@@ -1,22 +1,24 @@
 import DecryptedText from "./atoms/DecryptedText";
 import Images from "./atoms/Images";
 import MainTitle from "./atoms/MainTitle";
-import avatar from "../images/avatar.png";
+import avatar from "../images/avatar2.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function Intro() {
     return (
         <div className="flex flex-col justify-center items-center text-center gap-4 px-10 h-screen">
-            <Images className="w-[450px]" src={avatar} alt={"Animated style image of Ben Cornell"} />
-            <MainTitle title='I am Ben Cornell' />
+            <Images className="w-[350px]" src={avatar} alt={"Animated style image of Ben Cornell"} />
+            <MainTitle title='Hi! I am Ben Cornell.' />
             <DecryptedText 
-                text="I code things" 
+                text="I code things." 
                 speed={100} 
                 maxIterations={20} 
                 characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+" 
                 sequential="true"
-                className="revealed text-[1.5rem] font-primary md:text-[2rem]" 
+                className="revealed text-[2rem] font-primary text-slate-900 lg:text-[5rem]" 
                 parentClassName="all-letters"
-                encryptedClassName="encrypted text-[1.5rem] font-primary md:text-[2rem]"
+                encryptedClassName="encrypted text-[2rem] font-primary text-slate-900 lg:text-[5rem]"
                 animateOn="view"
                 revealDirection="start"
                 delay={300}
@@ -27,13 +29,15 @@ export default function Intro() {
                 maxIterations={20} 
                 characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+" 
                 sequential="true"
-                className="revealed text-[1.2rem] font-primary md:text-[1.75rem]" 
+                className="revealed text-[1.5rem] font-primary text-blue-700 md:text-[2rem]" 
                 parentClassName="all-letters"
-                encryptedClassName="encrypted text-[1.2rem] font-primary md:text-[1.75rem]"
+                encryptedClassName="encrypted text-[1.5rem] text-blue-700 font-primary md:text-[2rem]"
                 animateOn="view"
                 revealDirection="start"
                 delay={300}
             />
+            <p className="text-[1.25rem] font-primary text-slate-900 lg:text-[2rem] pt-[5vh]">A little more about me</p>
+            <FontAwesomeIcon className="p-2 mx-4 text-4xl hover:text-blue-700 duration-200" icon={faArrowDown} />
         </div>
     )
 }
