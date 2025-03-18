@@ -8,7 +8,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 export default function Intro() {
     return (
         <div className="flex flex-col justify-center items-center text-center gap-4 px-10 h-screen">
-            <Images className="w-[350px]" src={avatar} alt={"Animated style image of Ben Cornell"} />
+            <Images className="w-[20vw] min-w-[200px] max-w-[450px]" src={avatar} alt={"Animated style image of Ben Cornell"} />
             <MainTitle title='Hi! I am Ben Cornell.' />
             <DecryptedText 
                 text="I code things." 
