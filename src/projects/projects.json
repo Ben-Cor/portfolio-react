@@ -20,12 +20,12 @@
         },
         {
             "key": 3,
-            "title": "Laravel project",
-            "description": "This was a team project at the end of the iOAcademy Course",
+            "title": "Quiz application",
+            "description": "Using laravel and a pre build react fornt end, I was required to build an API that allowed quizes to be built, with quizes and answers able to be adited, added and deleted. The scores for the quizes can be calculated and returned to be displayed at the front end.",
             "image": "project_3.jpg",
-            "alt": "some alt text",
-            "link": "https://github.com/kapowie",
-            "projectLink": "https://2025-sql-seagulls-blog.dev.io-academy.uk/"
+            "alt": "Quiz application screenshot",
+            "link": "https://github.com/iO-Academy/2025-jan-sde-quiz-event-listeners",
+            "projectLink": "https://2025-sql-eventlisteners-quiz.dev.io-academy.uk/"
         }
     ]
 }
