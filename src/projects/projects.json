@@ -21,7 +21,7 @@
         {
             "key": 3,
             "title": "Quiz application",
-            "description": "Using laravel and a pre build react fornt end, I was required to build an API that allowed quizes to be built, with quizes and answers able to be adited, added and deleted. The scores for the quizes can be calculated and returned to be displayed at the front end.",
+            "description": "Using laravel and a pre build react front end, I was required to build an API that allows quizzes to be built, with quizzes and answers able to be edited, added, and deleted. The scores for the quizzes can be calculated and returned to be displayed at the front end.",
             "image": "project_3.jpg",
             "alt": "Quiz application screenshot",
             "link": "https://github.com/iO-Academy/2025-jan-sde-quiz-event-listeners",
