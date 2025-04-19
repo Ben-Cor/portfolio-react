@@ -12,8 +12,8 @@ function handleDropdown (){
 }
 
     return (
-        <div id="dropdown" className="md:block pt-6 pl-4" onTouch={handleDropdown} onClick={handleDropdown}>
-                <button className="z-50 fixed right-4 top-6 w-[50px] h-[50px] text-white focus-within:text-blue-300 bg-slate-800 p-3 rounded-3xl  md:hover:text-blue-300 md:focus-within:text-white">
+        <div id="dropdown" className="md:block pt-6 pl-4" onClick={handleDropdown}>
+                <button className="z-50 fixed right-4 top-6 w-[50px] h-[50px] border-2 border-neutral-300 text-neutral-300 bg-slate-800 p-3 rounded-3xl focus-within:bg-neutral-300 focus-within:text-slate-800 md:hover:text-slate-800 md:hover:bg-neutral-300">
                     <FontAwesomeIcon icon={faBars} />
                 </button>
                 {isOpen &&(

@@ -26,7 +26,7 @@ export default function Intro() {
                 />
             </div>
             <DecryptedText 
-            text="React | PHP | MySQL" 
+            text="React | PHP | MySQL | Laravel" 
             speed={75} 
             maxIterations={20} 
             characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+" 
