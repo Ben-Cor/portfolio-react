@@ -54,9 +54,9 @@ export default function App() {
       case 'contact':
         return 'bg-gradient-to-b from-indigo-50 to-blue-50';
       case 'intro':
-        return 'bg-gradient-to-b from-slate-400 to-blue-300';
+        return 'bg-gradient-to-b from-slate-800 to-blue-700';
       default:
-        return 'bg-gradient-to-b from-slate-400 to-blue-300';
+        return 'bg-gradient-to-b from-slate-800 to-blue-700';
     }
   };
 
