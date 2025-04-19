@@ -44,9 +44,9 @@ export default function App() {
   const getBackground = () => {
     switch(currentSection) {
       case 'about':
-        return 'bg-gradient-to-r from-blue-900 to-slate-800';
+        return 'bg-gradient-to-r from-teal-800 to-blue-900';
       case 'career':
-        return 'bg-gradient-to-r from-slate-800 to-blue-900';
+        return 'bg-gradient-to-r from-teal-800 to-lime-800';
       case 'coding':
         return 'bg-gradient-to-r from-blue-900 to-slate-800';
       case 'hobbies':
