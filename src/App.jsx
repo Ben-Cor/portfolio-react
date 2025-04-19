@@ -15,14 +15,25 @@ export default function App() {
     const handleScroll = () => {
       const sections = ['intro', 'about', 'career', 'coding', 'hobbies', 'contact'];
       const scrollPosition = window.scrollY + window.innerHeight / 3;
-      
+  
+      let sectionFound = false;
+  
       for (const section of sections) {
         const element = document.getElementById(section);
-        if (element && scrollPosition >= element.offsetTop && 
-            scrollPosition < element.offsetTop + element.offsetHeight) {
+        if (
+          element &&
+          scrollPosition >= element.offsetTop &&
+          scrollPosition < element.offsetTop + element.offsetHeight
+        ) {
           setCurrentSection(section);
+          sectionFound = true;
           break;
         }
+      }
+  
+      // If no section matches and scroll is at the top, reset to 'intro'
+      if (!sectionFound && window.scrollY === 0) {
+        setCurrentSection('intro');
       }
     };
     

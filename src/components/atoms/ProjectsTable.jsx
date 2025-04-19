@@ -37,7 +37,7 @@ export default function ProjectsTable() {
         ))}
       </div>
 
-      <div className="sticky lg:top-4 bottom-0 lg:h-auto lg:w-[500px] bg-white border-2 lg:bg-transparent z-10">
+      <div className="sticky lg:top-4 bottom-0 lg:h-auto lg:w-[500px] bg-white border-[1px] lg:border-0 lg:bg-transparent z-10">
         {hoveredProject && (
           <div className="flex flex-col items-center justify-center gap-4 p-4 lg:p-0">
             <img
