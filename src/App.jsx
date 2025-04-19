@@ -44,19 +44,19 @@ export default function App() {
   const getBackground = () => {
     switch(currentSection) {
       case 'about':
-        return 'bg-gradient-to-b from-purple-50 to-indigo-50';
+        return 'bg-gradient-to-r from-blue-900 to-slate-800';
       case 'career':
-        return 'bg-gradient-to-b from-indigo-50 to-blue-50';
+        return 'bg-gradient-to-r from-slate-800 to-blue-900';
       case 'coding':
-        return 'bg-gradient-to-b from-blue-50 to-purple-50';
+        return 'bg-gradient-to-r from-blue-900 to-slate-800';
       case 'hobbies':
-        return 'bg-gradient-to-b from-purple-50 to-indigo-50';
+        return 'bg-gradient-to-r from-slate-800 to-blue-900';
       case 'contact':
-        return 'bg-gradient-to-b from-indigo-50 to-blue-50';
+        return 'bg-gradient-to-r from-blue-900 to-slate-800';
       case 'intro':
-        return 'bg-gradient-to-b from-slate-800 to-blue-700';
+        return 'bg-gradient-to-r from-slate-800 to-blue-900';
       default:
-        return 'bg-gradient-to-b from-slate-800 to-blue-700';
+        return 'bg-gradient-to-r from-slate-800 to-blue-900';
     }
   };
 
