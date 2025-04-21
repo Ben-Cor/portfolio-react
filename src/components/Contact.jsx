@@ -22,13 +22,13 @@ export default function Contact() {
             <Images className={`${showClass} w-[300px]  border-neutral-200 border-2 md:mt-10 md:mb-[5vh] md:w-[20vw] md:max-w-[500px]`} src={simpsonsGIF} alt={'simpsons gif showing homer sending an email'} />
             <div id="contact" className="grid grid-cols-1 md:flex md:flex-row">
                 <a className="p-2 mx-4" target="_blank"  href="https://www.linkedin.com/in/ben-cornell-a7228455/" >
-                  <FontAwesomeIcon className="p-2 mx-4 text-4xl text-neutral-300 hover:text-blue-700 duration-200" icon={faLinkedin} />  
+                  <FontAwesomeIcon className="p-2 mx-4 text-4xl text-neutral-300 hover:text-lime-500 duration-200" icon={faLinkedin} />  
                 </a>
                 <a className="p-2 mx-4" target="_blank" href="https://github.com/Ben-Cor">
-                    <FontAwesomeIcon className="p-2 mx-4 text-4xl text-neutral-300 hover:text-blue-700 duration-200" icon={faSquareGithub} />
+                    <FontAwesomeIcon className="p-2 mx-4 text-4xl text-neutral-300 hover:text-lime-500 duration-200" icon={faSquareGithub} />
                 </a>
                 <a className="p-2 mx-4" href="mailto:ben.james.cornell@gmail.com">
-                    <FontAwesomeIcon className="p-2 mx-4 text-4xl text-neutral-300 hover:text-blue-700 duration-200" icon={faEnvelope} />
+                    <FontAwesomeIcon className="p-2 mx-4 text-4xl text-neutral-300 hover:text-lime-500 duration-200" icon={faEnvelope} />
                 </a>
             </div>
             

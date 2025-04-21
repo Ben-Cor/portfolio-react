@@ -26,7 +26,7 @@ export default function ProjectsTable() {
         {projectsInfo.map((project) => (
           <div
             key={project.key}
-            className={`border-[1px] font-primary border-slate-900 p-3 cursor-pointer hover:text-white focus-within:text-white hover:bg-slate-900 active:bg-slate-900 active:text-white transition-colors duration-200 ${selectedProject === project ? 'bg-slate-900 text-white' : ''}`}
+            className={`border-[1px] font-primary text-neutral-300 border-slate-900 p-3 cursor-pointer hover:text-white focus-within:text-white hover:bg-slate-900 active:bg-slate-900 active:text-white transition-colors duration-200 ${selectedProject === project ? 'bg-slate-900 text-white' : ''}`}
             onMouseEnter={() => setHoveredProject(project)}
             onTouchStart={() => handleProjectClick(project)}
             onClick={() => handleProjectClick(project)}
@@ -47,7 +47,7 @@ export default function ProjectsTable() {
             />
             <div className="flex items-center justify-center gap-4">
               <a
-                className="p-2 text-4xl hover:text-blue-700 focus-within:text-blue-700 text-neutral-300"
+                className="p-2 text-4xl hover:text-lime-500 focus-within:text-lime-500 text-neutral-300"
                 target="_blank"
                 rel="noopener noreferrer"
                 href={hoveredProject.link}
@@ -55,7 +55,7 @@ export default function ProjectsTable() {
                 <FontAwesomeIcon icon={faSquareGithub} />
               </a>
               <a
-                className="hover:text-blue-700 focus-within:text-blue-700 font-secondary text-neutral-300"
+                className="hover:text-lime-500 focus-within:text-lime-500 font-secondary text-neutral-300"
                 href={hoveredProject.projectLink}
               >
                 View project here
