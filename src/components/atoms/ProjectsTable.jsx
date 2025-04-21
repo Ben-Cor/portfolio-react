@@ -47,7 +47,7 @@ export default function ProjectsTable() {
             />
             <div className="flex items-center justify-center gap-4">
               <a
-                className="p-2 text-4xl hover:text-blue-700 focus-within:text-blue-700"
+                className="p-2 text-4xl hover:text-blue-700 focus-within:text-blue-700 text-neutral-300"
                 target="_blank"
                 rel="noopener noreferrer"
                 href={hoveredProject.link}
@@ -55,7 +55,7 @@ export default function ProjectsTable() {
                 <FontAwesomeIcon icon={faSquareGithub} />
               </a>
               <a
-                className="hover:text-blue-700 focus-within:text-blue-700 font-secondary"
+                className="hover:text-blue-700 focus-within:text-blue-700 font-secondary text-neutral-300"
                 href={hoveredProject.projectLink}
               >
                 View project here
