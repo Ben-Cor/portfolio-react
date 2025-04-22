@@ -15,7 +15,7 @@ export default function Career() {
     var showClass = isVisible ? "opacity-100 transition duration-900 ease-in-out delay-400 md:delay-0" : "opacity-0 transition duration-400 ease-in-out";
 
     return (
-        <div id="career" ref={careerRef} className="flex flex-col items-end text-right text-slate-800 max-w-[95%] pr-[3%] py-[15vh] md:py-[20vh]">
+        <section id="career" ref={careerRef} className="flex flex-col items-end text-right text-slate-800 max-w-[95%] pr-[3%] py-[15vh] md:py-[20vh]">
             <SectionTitle title={"Career"} />
             <div className="flex flex-col-reverse items-end justify-start gap-[10%] md:flex-row md:w-[90%] md:items-center">
                 <Images className={`${showClass} w-[300px] mt-10 border-neutral-200 border-2 md:w-[30vw] md:mt-0`} src={southParkGIF} alt={'A gif of stan from south park claiming to have solved problems'} />
@@ -32,6 +32,6 @@ export default function Career() {
                 <a  className="text-2xl p-2 px-4 mt-5 hidden border-neutral-300 border-2 rounded-3xl bg-slate-800 text-neutral-300 hover:text-slate-800 hover:bg-neutral-300 md:block" href={BenCV} download="BenCV.pdf"> 
                     <Button text={'View my C.V.'} />
                 </a>
-        </div>
+        </section>
     )
 }

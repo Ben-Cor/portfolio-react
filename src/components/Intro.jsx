@@ -31,9 +31,9 @@ export default function Intro() {
             maxIterations={20} 
             characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+" 
             sequential="true"
-            className="revealed text-[1.5rem] font-primary text-lime-500 md:text-[2rem]" 
+            className="revealed text-[1.25rem] font-primary text-lime-500 md:text-[2rem]" 
             parentClassName="all-letters"
-            encryptedClassName="encrypted text-[1.5rem] text-lime-500 font-primary md:text-[2rem]"
+            encryptedClassName="encrypted text-[1.25rem] text-lime-500 font-primary md:text-[2rem]"
             animateOn="view"
             revealDirection="start"
             delay={300}

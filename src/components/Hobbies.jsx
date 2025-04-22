@@ -13,7 +13,7 @@ export default function Hobbies() {
     var showClass = isVisible ? "opacity-100 transition duration-900 ease-in-out delay-300 md:delay-0" : "opacity-0 transition duration-400 ease-in-out";
 
     return (
-        <div id="hobbies" ref={hobbiesRef} className="flex flex-col items-end text-right text-slate-800 max-w-[95%] pr-[3%] py-[15vh] lg:py-[20vh]">
+        <section id="hobbies" ref={hobbiesRef} className="flex flex-col items-end text-right text-slate-800 max-w-[95%] pr-[3%] py-[15vh] lg:py-[20vh]">
                     <SectionTitle title={"Hobbies"} />
                     <div className="flex flex-col-reverse items-end justify-start gap-[10%] lg:items-center lg:justify-end lg:flex-row lg:w-[90%]">
                         <Images className={`${showClass} w-[300px] mt-18 border-neutral-200 border-2 lg:max-w-[600px] md:w-[25vw] lg:mt-0`} src={conesGIF} alt={'gif of Ben from parks and rec playing cones of dunshire'} />
@@ -21,6 +21,6 @@ export default function Hobbies() {
                             board games, and cooking as well as reading (mainly sci-fi or fantasy), long dog walks in the 
                             countryside, or meeting up with friends in a cosy pub.`} />
                     </div>
-        </div>
+        </section>
     )
 }

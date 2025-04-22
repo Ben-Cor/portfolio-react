@@ -16,7 +16,7 @@ export default function Contact() {
     var showClass = isVisible ? "translate-y-0 transition duration-500 ease-in-out delay-300 md:delay-0" : "translate-y-[100px] transition duration-400 ease-in-out";
 
     return (
-        <div ref={contactRef} id="contact" className="flex flex-col justify-center items-center text-center gap-4 px-10 h-screen">
+        <section ref={contactRef} id="contact" className="flex flex-col justify-center items-center text-center gap-4 px-10 h-screen">
             <SectionTitle title={'Contact'} />
             <p className="mb-10 text:xl font-secondary text-neutral-300 px-[5%] md:text-2xl">If you would like to get in touch, please either send me an email or use one of the socials links below</p>
             <Images className={`${showClass} w-[300px]  border-neutral-200 border-2 md:mt-10 md:mb-[5vh] md:w-[20vw] md:max-w-[500px]`} src={simpsonsGIF} alt={'simpsons gif showing homer sending an email'} />
@@ -32,6 +32,6 @@ export default function Contact() {
                 </a>
             </div>
             
-        </div>
+        </section>
     )
 }
