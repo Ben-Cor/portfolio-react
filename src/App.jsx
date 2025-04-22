@@ -14,7 +14,7 @@ export default function App() {
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['intro', 'about', 'career', 'coding', 'hobbies', 'contact'];
-      const scrollPosition = window.scrollY + window.innerHeight / 3;
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
   
       let sectionFound = false;
   
