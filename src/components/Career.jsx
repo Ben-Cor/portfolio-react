@@ -2,7 +2,6 @@ import Images from "./atoms/Images";
 import SectionTitle from "./atoms/SectionTitle";
 import TextBodyRight from "./atoms/TextBodyRight";
 import useIntersectionObserver from "../hooks/intersectionObserver";
-import Button from "./atoms/Button";
 import { useRef } from "react";
 import southParkGIF from "../images/southParkGIF.gif";
 import BenCV from "../images/BenCV.pdf";
@@ -19,8 +18,8 @@ export default function Career() {
             <SectionTitle title={"Career"} />
             <div className="flex flex-col-reverse items-end justify-start gap-[10%] md:flex-row md:w-[90%] md:items-center">
                 <Images className={`${showClass} w-[300px] mt-10 border-neutral-200 border-2 md:w-[30vw] md:mt-0`} src={southParkGIF} alt={'A gif of stan from south park claiming to have solved problems'} />
-                <a  className="text-2xl p-2 px-4 mt-5 border-slate-800 border-2 rounded-3xl bg-slate-800 text-amber-50 md:hidden" href={BenCV} download="BenCV.pdf"> 
-                    <Button text={'View my C.V.'} />
+                <a  className="text-2xl p-2 px-4 mt-5 font-primary border-slate-800 border-2 rounded-3xl bg-slate-800 text-amber-50 md:hidden" href={BenCV} download="BenCV.pdf"> 
+                    View my C.V.
                 </a>
                 <TextBodyRight text={`I have been working as an Architect and Senior Architect 
                     since 2015. I have always loved problem solving and being able to find creative solutions 
@@ -29,8 +28,8 @@ export default function Career() {
                     valuable lessons including collaboration, communication, project management, problem solving, time management, 
                     and organisation. A copy of my C.V. is available to download using the link below.`} />
             </div>
-                <a  className="text-2xl p-2 px-4 mt-5 hidden border-neutral-300 border-2 rounded-3xl bg-slate-800 text-neutral-300 hover:text-slate-800 hover:bg-neutral-300 md:block" href={BenCV} download="BenCV.pdf"> 
-                    <Button text={'View my C.V.'} />
+                <a  className="text-2xl p-2 px-4 mt-5 font-primary hidden border-neutral-300 border-2 rounded-3xl bg-slate-800 text-neutral-300 hover:text-slate-800 hover:bg-neutral-300 md:block" href={BenCV} download="BenCV.pdf"> 
+                    View my C.V.
                 </a>
         </section>
     )

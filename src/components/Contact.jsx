@@ -21,13 +21,13 @@ export default function Contact() {
             <p className="mb-10 text:xl font-secondary text-neutral-300 px-[5%] md:text-2xl">If you would like to get in touch, please either send me an email or use one of the socials links below</p>
             <Images className={`${showClass} w-[300px]  border-neutral-200 border-2 md:mt-10 md:mb-[5vh] md:w-[20vw] md:max-w-[500px]`} src={simpsonsGIF} alt={'simpsons gif showing homer sending an email'} />
             <div id="contact" className="grid grid-cols-1 md:flex md:flex-row">
-                <a className="p-2 mx-4" target="_blank"  href="https://www.linkedin.com/in/ben-cornell-a7228455/" >
+                <a className="p-2 mx-4" aria-label="linkedIn" aria-hidden="true" target="_blank"  href="https://www.linkedin.com/in/ben-cornell-a7228455/" >
                   <FontAwesomeIcon className="p-2 mx-4 text-4xl text-neutral-300 hover:text-lime-500 duration-200" icon={faLinkedin} />  
                 </a>
-                <a className="p-2 mx-4" target="_blank" href="https://github.com/Ben-Cor">
+                <a className="p-2 mx-4" aria-label="github" aria-hidden="true" target="_blank" href="https://github.com/Ben-Cor">
                     <FontAwesomeIcon className="p-2 mx-4 text-4xl text-neutral-300 hover:text-lime-500 duration-200" icon={faSquareGithub} />
                 </a>
-                <a className="p-2 mx-4" href="mailto:ben.james.cornell@gmail.com">
+                <a className="p-2 mx-4" aria-label="send email" aria-hidden="true" href="mailto:ben.james.cornell@gmail.com">
                     <FontAwesomeIcon className="p-2 mx-4 text-4xl text-neutral-300 hover:text-lime-500 duration-200" icon={faEnvelope} />
                 </a>
             </div>

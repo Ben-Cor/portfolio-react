@@ -16,7 +16,7 @@ export default function Coding() {
                         Below you can see some of the projects I have developed - more can be found on my GitHub profile.`} />
                 </div>
                 <div className="pt-[5%] max-w-[90%]">
-                    <h5 className="md:text-4xl text-2xl font-primary text-neutral-200 my-[50px]">Coding Projects</h5>
+                    <h4 className="md:text-4xl text-2xl font-primary text-neutral-200 my-[50px]">Coding Projects</h4>
                     <div id="projectGrid" className="flex flex-wrap items-center justify-start gap-[5%] md:gap-20 my-2">
                         <ProjectsTable />
                     </div>

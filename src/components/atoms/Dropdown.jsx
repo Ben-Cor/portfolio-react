@@ -14,6 +14,8 @@ function handleDropdown (){
     return (
         <div id="dropdown" className="md:block pt-6 pl-4" onClick={handleDropdown}>
                 <button 
+                aria-label="dropdown menu" 
+                aria-hidden="true"
                 className=" z-50 
                             fixed 
                             right-4 

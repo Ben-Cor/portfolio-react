@@ -44,7 +44,7 @@ export default function ProjectsTable() {
             onTouchStart={() => handleProjectClick(project)}
             onClick={() => handleProjectClick(project)}
           >
-            <h4 className="text-2xl">{project.title}</h4>
+            <h5 className="text-2xl">{project.title}</h5>
             <p>{project.description}</p>
           </div>
         ))}
