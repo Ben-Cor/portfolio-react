@@ -26,18 +26,40 @@ export default function ProjectsTable() {
         {projectsInfo.map((project) => (
           <div
             key={project.key}
-            className={`border-[1px] font-primary text-neutral-300 border-slate-900 p-3 cursor-pointer hover:text-white focus-within:text-white hover:bg-slate-900 active:bg-slate-900 active:text-white transition-colors duration-200 ${selectedProject === project ? 'bg-slate-900 text-white' : ''}`}
+            className={`
+              border-[1px] 
+              font-primary 
+              text-neutral-300 
+              border-slate-900 
+              p-3 cursor-pointer 
+              hover:text-white 
+              focus-within:text-white 
+              hover:bg-slate-900 
+              active:bg-slate-900 
+              active:text-white 
+              transition-colors 
+              duration-200 
+              ${selectedProject === project ? 'bg-slate-900 text-white' : ''}`}
             onMouseEnter={() => setHoveredProject(project)}
             onTouchStart={() => handleProjectClick(project)}
             onClick={() => handleProjectClick(project)}
           >
-            <h4 className="text-2xl">{project.title}</h4>
+            <h5 className="text-2xl">{project.title}</h5>
             <p>{project.description}</p>
           </div>
         ))}
       </div>
 
-      <div className="sticky lg:top-4 bottom-0 lg:h-auto lg:w-[500px] bg-white border-[1px] lg:border-0 lg:bg-transparent z-10">
+      <div className="
+      sticky 
+      lg:top-4 
+      bottom-0 
+      lg:h-auto 
+      lg:w-[500px] 
+      bg-white border-[1px] 
+      lg:border-0 
+      lg:bg-transparent 
+      z-10">
         {hoveredProject && (
           <div className="flex flex-col items-center justify-center gap-4 p-4 lg:p-0">
             <img
@@ -47,7 +69,7 @@ export default function ProjectsTable() {
             />
             <div className="flex items-center justify-center gap-4">
               <a
-                className="p-2 text-4xl hover:text-lime-500 focus-within:text-lime-500 text-neutral-300"
+                className="p-2 text-4xl hover:text-lime-500 focus-within:text-lime-500 lg:text-neutral-300"
                 target="_blank"
                 rel="noopener noreferrer"
                 href={hoveredProject.link}
@@ -55,7 +77,8 @@ export default function ProjectsTable() {
                 <FontAwesomeIcon icon={faSquareGithub} />
               </a>
               <a
-                className="hover:text-lime-500 focus-within:text-lime-500 font-secondary text-neutral-300"
+                className="hover:text-lime-500 focus-within:text-lime-500 font-secondary text-slate-800 lg:text-neutral-300"
+                target="_blank" 
                 href={hoveredProject.projectLink}
               >
                 View project here
