@@ -11,7 +11,7 @@ export default function Intro() {
             <Images className="w-[20vw] min-w-[200px] max-w-[375px] mb-4 border-2 border-neutral-200" src={avatar} alt={"Animated style image of Ben Cornell"} />
             <div>
                 <MainTitle title='Hi! I am Ben Cornell.' />
-                <DecryptedText 
+                <h2><DecryptedText 
                     text="I code things." 
                     speed={100} 
                     maxIterations={20} 
@@ -23,23 +23,23 @@ export default function Intro() {
                     animateOn="view"
                     revealDirection="start"
                     delay={300}
-                />
+                /></h2>
             </div>
-            <DecryptedText 
-            text="React | PHP | MySQL | Laravel" 
-            speed={45} 
-            maxIterations={20} 
-            characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+" 
-            sequential="true"
-            className="revealed text-[1.25rem] font-primary text-lime-500 md:text-[2rem]" 
-            parentClassName="all-letters"
-            encryptedClassName="encrypted text-[1.25rem] text-lime-500 font-primary md:text-[2rem]"
-            animateOn="view"
-            revealDirection="start"
-            delay={300}
-            />
-            <p className="text-[1rem] font-primary text-neutral-300 lg:text-[1.5rem] pt-[5vh]">A little more about me</p>
-            <FontAwesomeIcon className="p-2 mx-4 text-4xl text-neutral-300 duration-200" icon={faArrowDown} />
-        </div>
+                <h2><DecryptedText 
+                text="React | PHP | MySQL | Laravel" 
+                speed={45} 
+                maxIterations={20} 
+                characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+" 
+                sequential="true"
+                className="revealed text-[1.25rem] font-primary text-lime-500 md:text-[2rem]" 
+                parentClassName="all-letters"
+                encryptedClassName="encrypted text-[1.25rem] text-lime-500 font-primary md:text-[2rem]"
+                animateOn="view"
+                revealDirection="start"
+                delay={300}
+                /></h2>
+                <p className="text-[1rem] font-primary text-neutral-300 lg:text-[1.5rem] pt-[5vh]">A little more about me</p>
+                <FontAwesomeIcon className="p-2 mx-4 text-4xl text-neutral-300 duration-200" icon={faArrowDown} />
+            </div>
     )
 }
