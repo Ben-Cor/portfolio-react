@@ -26,6 +26,15 @@
             "alt": "Quiz application screenshot",
             "link": "https://github.com/iO-Academy/2025-jan-sde-quiz-event-listeners",
             "projectLink": "https://2025-event-listeners-quiz-fe.dev.io-academy.uk/"
+        },
+        {
+            "key": 4,
+            "title": "Password Generator",
+            "description": "A simple password generator that allows users to select the length and types of characters to include in the generated password.",
+            "image": "project_4.jpg",
+            "alt": "Password generator screenshot",
+            "link": "https://github.com/Ben-Cor/passwordGenerator-React",
+            "projectLink": "https://password-generator.2025-benc.dev.io-academy.uk/"
         }
     ]
 }
